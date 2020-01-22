@@ -4,19 +4,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,25 +92,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -50,10 +137,198 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+	height: 100%;
 }
 
+@backgroundBlack: Black;
+
+
+
+.fix {
+	width: 800px;
+	margin: auto;
+
+
+	.container {
+
+		display: flex;
+		justify-content: flex-end;
+		padding-top: 40px;
+		word-spacing: 20px;
+		margin: 0 auto;
+
+
+
+		.nav-container {
+
+
+
+			nav {
+
+
+
+				a {
+					text-decoration: none;
+					color: @backgroundBlack;
+					font-size: 30px;
+
+				}
+
+			}
+		}
+
+	}
+}
+
+.container2 {
+
+	display: flex;
+	margin: 50px auto;
+	border: 1px solid grey;
+	padding: 200px;
+	background-color: cadetblue;
+
+	div {
+		padding-top: 60px;
+
+		h1 {
+			font-size: 44px;
+			margin-left: -100px;
+			display: flex;
+			width: 160%;
+		}
+
+		p {
+			margin: 40px;
+			margin-left: -100px
+		}
+
+		Button {
+			box-shadow: inset 0px 1px 0px 0px #ffffff;
+			background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+			background-color: #ffffff;
+			border-radius: 6px;
+			border: 1px solid #dcdcdc;
+			display: inline-block;
+			cursor: pointer;
+			color: #666666;
+			font-family: Arial;
+			font-size: 15px;
+			font-weight: bold;
+			padding: 6px 24px;
+			text-decoration: none;
+			text-shadow: 0px 1px 0px #ffffff;
+			margin-left: -100px;
+		}
+
+		Button:hover {
+			background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+			background-color: #f6f6f6;
+		}
+
+		Button:active {
+			position: relative;
+			top: 1px;
+		}
+
+	}
+}
+
+.work {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+
+
+	div {
+		width: 45%;
+
+		h2 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 30px;
+		}
+	}
+
+
+	.list {
+		font-size: 20px;
+		width: 100%;
+
+
+
+		p {
+			padding: 20px 0;
+			padding-left: 10px;
+			border: black solid 1px;
+		}
+	}
+
+}
+
+footer {
+	background-color: lightgrey;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+
+	div {
+
+		h2 {
+			font-size: 30px;
+		}
+
+	}
+}
+
+@media (max-width:500px) {
+
+
+	.container {
+
+		display: flex;
+		align-items: baseline;
+
+		.nav-container {
+
+			width: 100%;
+			margin: 0 auto;
+			// height: 100px;
+		}
+
+		nav {
+			display: flex;
+
+
+			a {
+				margin: 0 auto;
+
+			}
+		}
+
+	}
+}
+
+@media (max-width:500px) {
+	.work {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 4% 0;
+
+		h3 {
+			margin-top: 50px;
+		}
+
+	}
+}
