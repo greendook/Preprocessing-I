@@ -135,7 +135,7 @@ body {
   height: 100%;
 }
 .fix {
-  width: 800px;
+  width: 80%;
   margin: auto;
 }
 .fix .container {
@@ -158,8 +158,9 @@ body {
   background-color: cadetblue;
 }
 .container2 div {
-  padding-top: 60px;
+  padding-top: 30px;
   color: White;
+  padding-bottom: 30px;
 }
 .container2 div h1 {
   font-size: 44px;
@@ -229,18 +230,47 @@ footer div h2 {
   font-size: 30px;
 }
 @media (max-width: 500px) {
-  .container {
+  .fix {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: flex-start;
   }
-  .container .nav-container {
+  .fix .nav-container {
+    display: flex;
+    overflow-x: hidden;
+    justify-content: flex-start;
     width: 100%;
-    margin: 0 auto;
   }
-  .container nav {
+  .fix .nav-container a {
     display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    border-bottom: 2px black solid;
+    width: 100%;
   }
-  .container nav a {
+  .fix .container2 {
+    display: flex;
+    padding: 0;
+  }
+  .fix .container2 h1 {
+    font-size: 30px;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    color: peachpuff;
+  }
+  .fix .container2 p {
+    font-size: 15px;
+    display: flex;
+    margin: 50 auto;
+    padding-left: 150px;
+    color: peachpuff;
+  }
+  .fix .container2 button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
     margin: 0 auto;
   }
 }

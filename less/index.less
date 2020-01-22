@@ -149,10 +149,16 @@ body {
 @backgroundBlack: Black;
 @fontWhite: White;
 
+.peach() {
+	color: peachpuff
+}
+
+;
 
 .fix {
-	width: 800px;
+	width: 80%;
 	margin: auto;
+
 
 
 	.container {
@@ -195,8 +201,9 @@ body {
 	background-color: cadetblue;
 
 	div {
-		padding-top: 60px;
+		padding-top: 30px;
 		color: @fontWhite;
+		padding-bottom: 30px;
 
 		h1 {
 			font-size: 44px;
@@ -290,35 +297,67 @@ footer {
 	}
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
 
-
-	.container {
-
+	.fix {
 		display: flex;
-		align-items: baseline;
+		flex-direction: column;
+		overflow-x: hidden;
+		justify-content: flex-start;
+
 
 		.nav-container {
-
-			width: 100%;
-			margin: 0 auto;
-			// height: 100px;
-		}
-
-		nav {
 			display: flex;
 
+			overflow-x: hidden;
+			justify-content: flex-start;
+			// border-bottom: 2px black solid;
+			width: 100%;
 
 			a {
-				margin: 0 auto;
-
+				display: flex;
+				flex-direction: column;
+				overflow-x: hidden;
+				border-bottom: 2px black solid;
+				width: 100%;
 			}
 		}
 
+		.container2 {
+			display: flex;
+			padding: 0;
+
+			h1 {
+				font-size: 30px;
+				display: flex;
+				margin: 0 auto;
+				padding-bottom: 50px;
+				.peach();
+			}
+
+			p {
+				font-size: 15px;
+				display: flex;
+				margin: 50 auto;
+				padding-left: 150px;
+				.peach();
+			}
+
+			button {
+				display: flex;
+				justify-content: center;
+				padding: 20px;
+				margin: 0 auto;
+			}
+		}
+
+
+
 	}
+
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
 	.work {
 
 		display: flex;
