@@ -259,6 +259,7 @@ footer div h2 {
     margin: 0 auto;
     padding-bottom: 50px;
     color: peachpuff;
+    max-width: 80%;
   }
   .fix .container2 p {
     font-size: 15px;
